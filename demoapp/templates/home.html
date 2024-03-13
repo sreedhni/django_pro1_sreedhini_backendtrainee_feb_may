@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <style>
+        .text-center {
+            text-align: center;
+            color: magenta;
+        }
+    </style>
+</head>
+<body>
+    <h3 class="text-center">Hello guys, Welcome!!!!!!!!!!!!!!!!!</h3>
+
+    <div style="text-align: center;">
+        {% block user_info %}
+            <h5>
+                <span style="color: blue;">Name:</span> {{ name }} &nbsp;&nbsp;&nbsp;
+                <span style="color: blue;">Age:</span> {{ age }} &nbsp;&nbsp;&nbsp;
+                <span style="color: blue;">Place:</span> {{ place }}
+            </h5>
+        {% endblock %}
+    </div>
+</body>
+</html>
